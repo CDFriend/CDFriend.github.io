@@ -1,1 +1,2 @@
 name: Charlie's Test Jekyll Site
+exclude: Makefile
