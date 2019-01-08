@@ -7,7 +7,17 @@
     </head>
 
     <body>
+
         <div class="container">
+            <nav class="upper-navbar">
+                <div id="upper-navbar-links">
+                    {% assign nav_items = (site.data.navigation.items | reverse) %}
+                    {% for item in nav_items %}
+                        <a href="{{ item.url }}"">{{ item.name }}</a>
+                    {% endfor %}
+                </div>
+            </nav>
+
             {{ content }}
         </div>
     </body>

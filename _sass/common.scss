@@ -21,6 +21,22 @@ div {
     .flex-vcenter { align-items: center; }
     .flex-vbottom { align-items: flex-end; }
 }
+
+// Navbar
+nav.upper-navbar {
+    margin: 5px;
+
+    #upper-navbar-links {
+        display: flex;
+        flex-direction: row-reverse;
+
+        a {
+            margin-left: 3px;
+            margin-right: 3px;
+        }
+    }
+}
+
 @mixin box-shadow($property) {
     box-shadow: $property;
     -moz-box-shadow: $property;
