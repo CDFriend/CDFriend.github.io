@@ -1,0 +1,40 @@
+/**
+ *  Common mixing and classes
+ */
+
+// Colors
+$line: 1px solid rgba(0, 0, 0, 0.1);
+
+// Flexbox
+div {
+    .flex-container {
+        display: flex;
+    }
+
+    @for $i from 1 to 12 {
+        .flex-#{$i} {
+            flex: $i
+        }
+    }
+
+    .flex-vtop    { align-items: flex-start; }
+    .flex-vcenter { align-items: center; }
+    .flex-vbottom { align-items: flex-end; }
+}
+@mixin box-shadow($property) {
+    box-shadow: $property;
+    -moz-box-shadow: $property;
+    -webkit-box-shadow: $property;
+}
+
+$img-float-pad: 15px;
+
+.float-left {
+    float: left;
+    margin-right: $img-float-pad;
+}
+
+.float-right {
+    float: right;
+    margin-left: $img-float-pad;
+}
