@@ -24,9 +24,9 @@ _2014-2015._
 
 # Technical Skills
 
-| Languages: | C/C++, Python, Java, C#, Javascript |
-| Libraries: | Numpy/Scipy/Pandas, Node.js, Suds (SOAP client), Pytest, SQLite, WPF, QT |
-| Software:  | MATLAB, Git/Mercurial/SVN, JIRA/Confluence, IntelliJ IDEs, Eclipse, Visual Studio, Solidworks |
+| **Languages:** | C/C++, Python, Java, C#, Javascript |
+| **Libraries:** | Numpy/Scipy/Pandas, Node.js, Suds (SOAP client), Pytest, SQLite, WPF, QT |
+| **Software:**  | MATLAB, Git/Mercurial/SVN, JIRA/Confluence, IntelliJ IDEs, Eclipse, Visual Studio, Solidworks |
 
 # Co-op Work Experience
 

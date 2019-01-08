@@ -3,7 +3,9 @@
  */
 
 // Colors
-$line: 1px solid rgba(0, 0, 0, 0.1);
+$line-light:  1px solid rgba(0, 0, 0, 0.1);
+$line-medium: 1px solid rgba(0, 0, 0, 0.2);
+$line-dark:   1px solid rgba(0, 0, 0, 0.3);
 
 // Flexbox
 div {
@@ -24,7 +26,8 @@ div {
 
 // Navbar
 nav.upper-navbar {
-    margin: 5px;
+    padding: 10px 5px 5px 5px;
+    border-bottom: $line-medium;
 
     #upper-navbar-links {
         display: flex;
@@ -33,6 +36,7 @@ nav.upper-navbar {
         a {
             margin-left: 3px;
             margin-right: 3px;
+            text-decoration: none;
         }
     }
 }

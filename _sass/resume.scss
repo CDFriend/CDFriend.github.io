@@ -1,3 +1,25 @@
-table {
-    border: none;
+@import "common";
+
+div.resume {
+
+    padding-top: 10px;
+    font-size: 11pt;
+
+    h1 { font-size: 1.3em; padding-top: 7px; padding-bottom: 3px; border-bottom: $line-light; }
+    h2 { font-size: 1.1em; padding-top: 5px; margin-bottom: 2px; }
+
+    p {
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
+    em {
+        font-size: small;
+    }
+
+    table {
+        border: none;
+        width: 100%;
+    }
+
 }
