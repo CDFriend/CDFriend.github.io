@@ -1,2 +1,2 @@
-name: Charlie's Test Jekyll Site
-exclude: Makefile
+title: Charlie's Test Jekyll Site
+exclude: [ Makefile ]
