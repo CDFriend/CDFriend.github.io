@@ -11,12 +11,16 @@ h1 {
 
 div.container {
     margin: auto;
-    width: 70%;
+    padding: 15px;
 
     div.content-section {
         border-bottom: $line-light;
         padding: 10px 2px 10px 2px;
     }
+}
+
+@media (min-width: 800px) {
+    div.container { width: 70%; }
 }
 
 // Images
