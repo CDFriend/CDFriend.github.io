@@ -9,6 +9,19 @@ $line-light:  1px solid rgba(0, 0, 0, 0.1);
 $line-medium: 1px solid rgba(0, 0, 0, 0.2);
 $line-dark:   1px solid rgba(0, 0, 0, 0.3);
 
+// Common Mixins
+@mixin box-shadow($property) {
+    box-shadow: $property;
+    -moz-box-shadow: $property;
+    -webkit-box-shadow: $property;
+}
+
+@mixin transition($property) {
+    transition: $property;
+    -webkit-transition: $property;
+    -moz-transition: $property;
+}
+
 // Flexbox
 div {
     .flex-container {
@@ -28,25 +41,31 @@ div {
 
 // Navbar
 nav.upper-navbar {
-    padding: 10px 5px 5px 5px;
+    padding: 10px 5px 10px 5px;
     border-bottom: $line-medium;
+
+    font-size: 0.9em;
+    font-weight: bold;
 
     .navbar-links {
         display: flex;
         flex-direction: row-reverse;
 
         a {
+            color: black;
             margin-left: 3px;
             margin-right: 3px;
+
+            // Hackity hack hack: use invisible bottom border for links
             text-decoration: none;
+            border-bottom: 2px solid rgba(0, 0, 0, 0);
+            @include transition(border-bottom 0.25s);
+        }
+
+        a:hover {
+            border-bottom: 2px solid $icon-hover;
         }
     }
-}
-
-@mixin box-shadow($property) {
-    box-shadow: $property;
-    -moz-box-shadow: $property;
-    -webkit-box-shadow: $property;
 }
 
 $img-float-pad: 15px;
@@ -59,11 +78,4 @@ $img-float-pad: 15px;
 .float-right {
     float: right;
     margin-left: $img-float-pad;
-}
-
-// Animations
-@mixin transition($property) {
-    transition: $property;
-    -webkit-transition: $property;
-    -moz-transition: $property;
 }
