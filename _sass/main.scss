@@ -33,6 +33,18 @@ div.footer {
     }
 }
 
+.animated-link-hover {
+    a {
+        color: black;
+        text-decoration: none;
+        @include transition(color 0.25s);
+    }
+
+    a:hover {
+        color: $icon-hover;
+    }
+}
+
 @media (min-width: 800px) {
     div.container { width: 90%; }
 }

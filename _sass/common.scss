@@ -3,6 +3,8 @@
  */
 
 // Colors
+$icon-hover: #bc3d34;
+
 $line-light:  1px solid rgba(0, 0, 0, 0.1);
 $line-medium: 1px solid rgba(0, 0, 0, 0.2);
 $line-dark:   1px solid rgba(0, 0, 0, 0.3);
@@ -57,4 +59,11 @@ $img-float-pad: 15px;
 .float-right {
     float: right;
     margin-left: $img-float-pad;
+}
+
+// Animations
+@mixin transition($property) {
+    transition: $property;
+    -webkit-transition: $property;
+    -moz-transition: $property;
 }
