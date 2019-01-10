@@ -4,8 +4,19 @@ div.resume {
 
     font-size: 11pt;
 
-    h1 { font-size: 1.3em; padding-top: 7px; padding-bottom: 3px; border-bottom: $line-light; }
-    h2 { font-size: 1.1em; padding-top: 5px; margin-bottom: 2px; }
+    h1 { 
+        font-size: 1.3em; 
+        padding-top: 7px; 
+        padding-bottom: 3px; 
+        border-bottom: $line-light; 
+        @include text-shadow(1px 1px 1px rgba(0, 0, 0, 0.15));
+    }
+    h2 { 
+        font-size: 1.1em; 
+        padding-top: 5px;
+        margin-bottom: 2px; 
+        @include text-shadow(1px 1px 1px rgba(0, 0, 0, 0.1));
+    }
 
     p {
         margin-top: 7px;

@@ -16,6 +16,12 @@ $line-dark:   1px solid rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: $property;
 }
 
+@mixin text-shadow($property) {
+    text-shadow: $property;
+    -moz-text-shadow: $property;
+    -webkit-text-shadow: $property;
+}
+
 @mixin transition($property) {
     transition: $property;
     -webkit-transition: $property;
@@ -53,8 +59,8 @@ nav.upper-navbar {
 
         a {
             color: black;
-            margin-left: 3px;
-            margin-right: 3px;
+            margin-left: 7px;
+            margin-right: 7px;
 
             // Hackity hack hack: use invisible bottom border for links
             text-decoration: none;
