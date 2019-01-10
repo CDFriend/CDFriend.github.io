@@ -3,6 +3,7 @@
  */
 
 // Colors
+$top-bar: #eeeeee;
 $icon-hover: #bc3d34;
 
 $line-light:  1px solid rgba(0, 0, 0, 0.1);
@@ -47,8 +48,14 @@ div {
 
 // Navbar
 nav.upper-navbar {
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: rgba($top-bar, 0.99);
     padding: 15px 10px 10px 10px;
-    border-bottom: $line-medium;
+    border-bottom: $line-light;
+    @include box-shadow(1px 1px 1px rgba(black, 0.15));
 
     font-size: 0.9em;
     font-weight: bold;
