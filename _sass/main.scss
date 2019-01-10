@@ -14,13 +14,16 @@ div.container {
     padding: 15px;
 
     div.content-section {
-        border-bottom: $line-light;
         padding: 10px 2px 10px 2px;
     }
 }
 
+div.divide-bottom {
+    border-bottom: $line-light;
+}
+
 div.footer {
-    padding: 7px;
+    padding: 12px 20px 12px 20px;
     color: rgba(0, 0, 0, 0.5);
     font-size: small;
 

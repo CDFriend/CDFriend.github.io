@@ -11,32 +11,32 @@
 
     <body>
 
-        <div class="container">
-            <nav class="upper-navbar">
-                <div class="navbar-links">
-                    {% assign nav_items = site.data.navigation.items | reverse %}
-                    {% for item in nav_items %}
-                        <a href="{{ item.url }}"">{{ item.name }}</a>
-                    {% endfor %}
-                </div>
-            </nav>
-
-            {{ content }}
-
-            <div class="footer">
-                <span class="icons animated-link-hover">
-                    <a href="https://www.github.com/CDFriend">
-                        <i class="fab fa-github-square"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/charliefriend/">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </span>
-
-                <span class="float-right">
-                    Made by Charlie Friend in {{ "now" | date: "%Y" }}.
-                </span>
+        <nav class="upper-navbar">
+            <div class="navbar-links">
+                {% assign nav_items = site.data.navigation.items | reverse %}
+                {% for item in nav_items %}
+                    <a href="{{ item.url }}"">{{ item.name }}</a>
+                {% endfor %}
             </div>
+        </nav>
+
+        <div class="container">
+            {{ content }}
+        </div>
+
+        <div class="footer">
+            <span class="icons animated-link-hover">
+                <a href="https://www.github.com/CDFriend">
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/charliefriend/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </span>
+
+            <span class="float-right">
+                Made by Charlie Friend in {{ "now" | date: "%Y" }}.
+            </span>
         </div>
     </body>
 
