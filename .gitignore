@@ -4,3 +4,6 @@ Gemfile.lock
 
 # Sass generated
 .sass-cache
+
+# Resume build
+resume/build
