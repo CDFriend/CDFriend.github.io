@@ -102,3 +102,8 @@ $img-float-pad: 15px;
     float: right;
     margin-left: $img-float-pad;
 }
+
+.full-underline {
+    padding-bottom: 5px;
+    border-bottom: $line-light;
+}
